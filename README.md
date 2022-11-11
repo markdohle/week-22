@@ -87,7 +87,7 @@ Test end points with Postman App if curl doesn't work
 
 Add user in postman
 
-<img id="postman-add-user" src="postman-add-user.png" width='400' style="position:absolute"> </img>
+<img id="postman-add-user" src="postman-post-adduser.png" width='400' style="position:absolute"> </img>
 
 Check browser to see if 3000/data was added to db
 
