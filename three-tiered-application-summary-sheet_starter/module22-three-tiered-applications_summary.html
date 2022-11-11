@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Three-tier Applications</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./proxima-nova-web-fonts-master/fonts/fonts.css" />
+</head>
+
+<body>
+    <div class="container">
+        <img src="mitxprologo.jpg" alt="MIT XPro Logo" width="250px" height="80px">
+        <h1 class="header-text">Three Tiered Applications</h1>
+    </div>
+    <p>Please review the concepts discussed this module.</p>
+
+<h2 id="middleware">Middleware</h2>
+
+
+<p>Middleware functions have access to the request object (req), the response object (res), and the next middleware function in the application’s 
+    request response cycle. The next middleware function is commonly denoted by a variable named "next".
+    Middleware functions can perform the following tasks:
+  <ul>
+    <li>Execute any code.</li>
+    <li>Make changes to the request and the response objects.</li>
+    <li>End the request response cycle.</li>
+    <li>Call the next middleware function in the stack. 
+  </ul>
+  <a href="https://expressjs.com/en/guide/using-middleware.html">Source: Official Express documentation</a></li>
+</p>
+<p>Here are some examples of middleware functions. Note how each function runs on the server, 
+    and has access to the request and response objects.  
+</p>
+<pre><code class="lang-js">app.get(<span class="hljs-string">'/users'</span>,(req,res)=&gt;{
+    res.json({
+        <span class="hljs-string">'status'</span>:<span class="hljs-literal">true</span>
+    })
+})
+
+
+<span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>)
+<span class="hljs-keyword">var</span> app = express()
+
+app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Time:'</span>, <span class="hljs-built_in">Date</span>.now())
+  next()
+})
+</code></pre>
+
+<h2 id="faker">Faker</h2>
+
+<p>Faker.js is a JavaScript library that can generate fake data to use when building or testing an application. 
+    You can generate all kinds of fake data this way, such as addresses, names, dates, and images. 
+</p>
+<p>
+    Here is an example of where faker has been used with Node.js, to create a new fake name, email, and contact 
+    card. For more information, visit the <a href="https://rawgit.com/Marak/faker.js/master/examples/browser/index.html#finance">Faker documentation.</a>
+</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> faker = require(<span class="hljs-string">'faker'</span>);
+
+<span class="hljs-keyword">var</span> randomName = faker.<span class="hljs-keyword">name</span>.findName(); <span class="hljs-comment">// Rowan Nikolaus</span>
+<span class="hljs-keyword">var</span> randomEmail = faker.internet.email(); <span class="hljs-comment">// Kassandra.Haley@erich.biz</span>
+<span class="hljs-keyword">var</span> randomCard = faker.helpers.createCard(); <span class="hljs-comment">// random contact card containing many properties</span>
+</code></pre>
+
+    To see and learn even more, reference the <a href="https://github.com/marak/faker.js#readme">faker.js library on GitHub</a>
+</p>
+
+<h2 id="digital-ocean">Digital Ocean</h2>
+
+
+<p>
+    Digital Ocean is a cloud computing service that provides developers with virtual machines, databases, and other cloud services. 
+    DigitalOcean Droplets are virtual machines that you can use to host your applications. 
+    Each Droplet is a server that you can  use and manage through the DigitalOcean platform.
+</p>
+
+<p class="footer">© MIT xPRO 2020. All rights reserved.</p>
+</body>
