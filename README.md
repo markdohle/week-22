@@ -84,7 +84,7 @@ mark@Katelyns-MacBook-Pro HTTP Post % curl -H "Content-Type: application/json" -
 Test end points with Postman App if curl doesn't work
 
 <p align="center">
-  <img src="/step2-post-user/postman-Post.png" width="350" title="hover text">
+  <img src="week-22/step2-post-user/postman-Post.png" width="350" title="hover text">
 </p>
 
 
