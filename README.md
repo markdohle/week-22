@@ -83,9 +83,7 @@ mark@Katelyns-MacBook-Pro HTTP Post % curl -H "Content-Type: application/json" -
 
 Test end points with Postman App if curl doesn't work
 
-<p align="center">
-  <img id="postman" src="tree/main/step2-post-user/postman-POST.png" width='400' style="position:absolute"> </img>
-</p>
+<img id="postman" src="step2-post-user/postman-POST.png" width='400' style="position:absolute"> </img>
 
 
 ### Video 22.1 Working With The Three Tiers
