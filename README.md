@@ -85,6 +85,14 @@ Test end points with Postman App if curl doesn't work
 
 <img id="postman" src="postman-POST.png" width='400' style="position:absolute"> </img>
 
+Add user in postman
+
+<img id="postman-add-user" src="postman-add-user.png" width='400' style="position:absolute"> </img>
+
+Check browser to see if 3000/data was added to db
+
+<img id="browser" src="3000-data.png" width='400' style="position:absolute"> </img>
+
 
 ### Video 22.1 Working With The Three Tiers
 
